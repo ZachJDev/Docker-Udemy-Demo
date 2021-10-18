@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t zachj2121/docker-udemy-demo -f Dockerfile.Dev .
+  - docker build -t zachj2121/docker-udemy-demo -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true zachj2121/docker-udemy-demo npm run test
